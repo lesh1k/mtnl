@@ -1,0 +1,11 @@
+{
+  "name": "mtnl",
+  "version": "1.0.0",
+  "description": "measurement to natural language",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo 'No test command specified'"
+  },
+  "author": "Alexei Dvorac",
+  "license": "MIT"
+}
