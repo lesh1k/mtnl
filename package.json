@@ -4,7 +4,7 @@
   "description": "measurement to natural language",
   "main": "app.js",
   "scripts": {
-    "test": "echo 'No test command specified'"
+    "test": "mocha test"
   },
   "author": "Alexei Dvorac",
   "license": "MIT",
