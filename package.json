@@ -7,5 +7,9 @@
     "test": "echo 'No test command specified'"
   },
   "author": "Alexei Dvorac",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
 }
