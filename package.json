@@ -11,5 +11,22 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesh1k/mtnl.git"
+  },
+  "keywords": [
+    "quantity",
+    "measurements",
+    "convert"
+  ],
+  "bugs": {
+    "url": "https://github.com/lesh1k/mtnl/issues"
+  },
+  "homepage": "https://github.com/lesh1k/mtnl#readme"
 }
