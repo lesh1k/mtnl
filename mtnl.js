@@ -19,7 +19,7 @@ function mtnl(quantity, unit_type='dry', CONFIG=LOADED_CONFIG) {
     let matching_units = findMatchingWithinError(quantity, units, rates, error);
     if (matching_units.length) {
         let unit = findBiggestMatching(matching_units, rates);
-        let [amount, error] = getMeasure(quantity, rates[unit], units[unit]);
+        let amount = getAmount(quantity, rates[unit], units[unit]);
         return formatResult(amount, units[unit]);
     }
 
@@ -33,7 +33,8 @@ function findMatchingWithinError(quantity=0, units={}, rates={}, allowed_error=0
             continue;
         }
 
-        let [amount, actual_error] = getMeasure(quantity, rates[k], units[k]);
+        let amount = getAmount(quantity, rates[k], units[k]),
+            actual_error = Math.abs(quantity - amount * rates[k]) / quantity;
         if (amount >= units[k].minimum && actual_error <= allowed_error) {
             result.push(k);
         }
@@ -55,11 +56,8 @@ function findBiggestMatching(matching, rates) {
     return result;
 }
 
-function getMeasure(q, rate, unit) {
-    let amount = Math.round(q / rate / unit.divisible) * unit.divisible,
-        error = Math.abs(q - amount * rate) / q;
-
-    return [amount, error];
+function getAmount(q, rate, unit) {
+    return Math.round(q / rate / unit.divisible) * unit.divisible;
 }
 
 function formatResult(amount, unit) {
