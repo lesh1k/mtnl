@@ -56,7 +56,7 @@
                 "divisible": 0.25
             }
         },
-        "liquid": {
+        "volume": {
             "tsp": {
                 "name": "teaspoon(s)",
                 "minimum": 0,
@@ -85,7 +85,7 @@
             "gallon": {
                 "name": "gallon(s)",
                 "minimum": 1,
-                "divisble": 1
+                "divisible": 1
             }
         }
     },
