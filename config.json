@@ -1,0 +1,100 @@
+{
+    "units": {
+        "dry": {
+            "gram": {
+                "name": "gram(s)",
+                "minimum": 1,
+                "divisible": 1
+            },
+            "tsp": {
+                "name": "teaspoon(s)",
+                "minimum": 0,
+                "divisible": 0.25
+            },
+            "tbsp": {
+                "name": "tablespoon(s)",
+                "minimum": 1,
+                "divisible": 0.5
+            },
+            "ounce": {
+                "name": "ounce(s)",
+                "minimum": 1,
+                "divisible": 1
+            },
+            "cup": {
+                "name": "cup(s)",
+                "minimum": 1,
+                "divisible": 0.5
+            }
+        },
+        "weight": {
+            "gram": {
+                "name": "gram(s)",
+                "minimum": 1,
+                "divisible": 1
+            },
+            "tsp": {
+                "name": "teaspoon(s)",
+                "minimum": 0,
+                "divisible": 0.25
+            },
+            "tbsp": {
+                "name": "tablespoon(s)",
+                "minimum": 1,
+                "divisible": 0.5
+            },
+            "ounce": {
+                "name": "ounce(s)",
+                "minimum": 0.25,
+                "divisible": 0.25
+            },
+            "pound": {
+                "name": "pound(s)",
+                "minimum": 1,
+                "divisible": 0.25
+            }
+        },
+        "liquid": {
+            "tsp": {
+                "name": "teaspoon(s)",
+                "minimum": 0,
+                "divisible": 0.25
+            },
+            "tbsp": {
+                "name": "tablespoon(s)",
+                "minimum": 1,
+                "divisible": 0.5
+            },
+            "ounce": {
+                "name": "ounce(s)",
+                "minimum": 1,
+                "divisible": 1
+            },
+            "cup": {
+                "name": "cup(s)",
+                "minimum": 1,
+                "divisible": 0.5
+            },
+            "liter": {
+                "name": "liter(s)",
+                "minimum": 1,
+                "divisible": 0.5
+            },
+            "gallon": {
+                "name": "gallon(s)",
+                "minimum": 1,
+                "divisble": 1
+            }
+        }
+    },
+    "rates": {
+        "gram": 1,
+        "tsp": 5,
+        "tbsp": 15,
+        "ounce": 28.35,
+        "cup": 226.8,
+        "pound": 453.6,
+        "liter": 1000,
+        "gallon": 3520
+    }
+}
