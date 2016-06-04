@@ -1,4 +1,6 @@
 {
+    "default_unit": "gram(s)",
+    "error": 10,
     "units": {
         "dry": {
             "gram": {
