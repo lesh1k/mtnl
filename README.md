@@ -37,7 +37,7 @@ In config, a unit looks like this:
 - `minimum` is used for specifying the smallest amount possible. For cup it's 1, thus `1/2 cup(s)` will never be possible, while `1 1/2 cup(s)` will be possible.  
 - `divisible` is used to determine the smallest *part* of the unit. For cup it's 0.5, thus `1 1/2 cup(s)` will be possible, while `1 3/4 cup(s)` will be not.  
 
-The `mntl` function chooses the biggest unit possible (based on `rates` in config) that allows getting the quantity within the specified margin of error (e.g. 6 grams with 10% error can be either `6 gram(s)` OR `1 1/4 teaspoons`. The output will be the latter since, `teaspoon` is bigger than `gram`.  
+The `mtnl` function chooses the biggest unit possible (based on `rates` in config) that allows getting the quantity within the specified margin of error (e.g. 6 grams with 10% error can be either `6 gram(s)` OR `1 1/4 teaspoons`. The output will be the latter since, `teaspoon` is bigger than `gram`.  
 
 
 #### Examples  
