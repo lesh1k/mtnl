@@ -1,7 +1,7 @@
 ### Quantity to "more natural" language  
 
 JS module that provides a function to convert an amount in grams (or other units) to a more "kitchen-like" language  
-**mtnl** stands for *measurement to natural language*  
+`mtnl` stands for *measurement to natural language*  
 
 
 ####Usage  
