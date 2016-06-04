@@ -14,4 +14,9 @@ describe('MTNL', () => {
         let expected = `-1 ${CONFIG.default_unit}`;
         assert.strictEqual(mtnl(-1), expected);
     });
+
+    it('Throws an err if unit not in config', () => {
+        let fn = mtnl.bind(null, 100, 'THE IMPROBABLE UNIT');
+        assert.throws(fn, Error);
+    });
 });
